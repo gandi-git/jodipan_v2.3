@@ -1,0 +1,20 @@
+.youtube-video-wrapper {
+  position: relative;
+  width: 100%; /* Sesuaikan lebar sesuai kebutuhan */
+  max-width: 720px; /* Atur lebar maksimum jika perlu */
+  height: 0;
+  padding-bottom: 56.25%; /* Rasio aspek video 16:9 (height / width * 100) */
+  overflow: hidden;
+  border-radius: 8px; /* Corner radius untuk menampilkan bentuk bulat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow untuk efek dimensi */
+}
+
+.youtube-video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none; /* Hilangkan border default */
+  border-radius: 8px; /* Corner radius untuk iframe */
+}
